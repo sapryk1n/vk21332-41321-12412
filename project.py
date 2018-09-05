@@ -8,5 +8,5 @@ while True:
     t = (datetime.datetime.now(datetime.timezone.utc) + delta)  # Присваиваем дату и время переменной «t»
     nowtime = t.strftime("%H:%M")  # текущее время
     nowdate = t.strftime("%d.%m.%Y")  # текущая дата
-    vk.method("status.set", {"text": " ● " + nowtime + " ● "})
-    time.sleep(30)  # погружаем скрипт в «сон» на 30 секунд
+    vk.method("status.set", {"text": " ● " + nowtime + " ● - Whisky 24/7"})
+    time.sleep(25)  # погружаем скрипт в «сон» на 25 секунд
