@@ -9,9 +9,7 @@ while True:
     nowtime = t.strftime("%H:%M")  # текущее время
     nowdate = t.strftime("%d.%m.%Y")  # текущая дата
     if nowtime < t.strftime("12:00") and nowtime > t.strftime("07:00"):
-        vk.method("status.set", {"text": " ● " + nowtime + " ● - Good Morning! 	
-&#9749; "})
+        vk.method("status.set", {"text": " ● " + nowtime + " ● - Good Morning! &#9749; "})
     else:
-        vk.method("status.set", {"text": " ● " + nowtime + " ● - Whisky 24/7 &#128172;
- "})
+        vk.method("status.set", {"text": " ● " + nowtime + " ● - Whisky 24/7 &#128172; "})
     time.sleep(25)  # погружаем скрипт в «сон» на 25 секунд
