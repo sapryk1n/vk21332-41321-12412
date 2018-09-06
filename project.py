@@ -8,5 +8,8 @@ while True:
     t = (datetime.datetime.now(datetime.timezone.utc) + delta)  # Присваиваем дату и время переменной «t»
     nowtime = t.strftime("%H:%M")  # текущее время
     nowdate = t.strftime("%d.%m.%Y")  # текущая дата
-    vk.method("status.set", {"text": " ● " + nowtime + " ● - Whisky 24/7"})
+    if nowtime < t.strftime(12:00) and nowtime > t.strftime(07:00):
+        vk.method("status.set", {"text": " ● " + nowtime + " ● - Good Morning!"})
+    else:
+        vk.method("status.set", {"text": " ● " + nowtime + " ● - Whisky 24/7"})
     time.sleep(25)  # погружаем скрипт в «сон» на 25 секунд
